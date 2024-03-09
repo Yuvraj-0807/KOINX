@@ -1,14 +1,8 @@
 import { logo } from '../../assets/images/images';
-import { useContact } from '../../hooks';
-import ENV_VARS from '../../utils/contants';
+
 import { BaseButton } from '../Button';
 
 export function NavBar() {
-  const { user } = useContact();
-  console.log('contacts', user);
-
-  console.log('ENV', ENV_VARS.baseURL);
-
   return (
     <nav className="border border-b-[#DEDFE2]">
       <div className="wrapper flex justify-between py-7 items-center ">

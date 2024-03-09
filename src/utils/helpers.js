@@ -6,3 +6,12 @@ export const formatDate = (value) => {
   }
   return value;
 };
+
+export const stringsToObjects = (arr) =>
+  arr.map((ar) => {
+    if (typeof ar !== 'string') {
+      return { ...ar };
+    } else {
+      return { label: ar, value: ar };
+    }
+  });

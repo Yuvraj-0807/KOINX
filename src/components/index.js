@@ -6,3 +6,7 @@ export * from './Aside';
 export * from './MainContent';
 export * from './Performance';
 export * from './Loader';
+export * from './Sentiments';
+export * from './ColoredBar';
+export * from './TabButtons';
+export * from './About';

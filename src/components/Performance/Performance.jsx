@@ -8,8 +8,6 @@ import { Loader } from '../Loader';
 export const Performance = () => {
   const { bitcoin, isLoadingPerformance } = useMarketPerformance();
 
-  console.log('bitcoin', bitcoin);
-
   function formatDateToString(dateString) {
     return new Date(dateString).toLocaleDateString();
   }
@@ -125,7 +123,7 @@ export const Performance = () => {
                   <p className="text-[#768396]">All-Time High</p>
                   <div>
                     <div>
-                      <div className="flex gap-1 text-sm font-medium leading-5">
+                      <div className="flex gap-1 text-sm font-medium leading-5 justify-end">
                         <p className="text-[#111827]">${bitcoin?.ath}</p>
                         <span
                           className={
@@ -134,7 +132,7 @@ export const Performance = () => {
                               : 'text-[#0FBA83]'
                           }
                         >
-                          {bitcoin?.ath_change_percentage}
+                          {bitcoin?.ath_change_percentage}%
                         </span>
                       </div>
 
@@ -151,7 +149,7 @@ export const Performance = () => {
                 <div className="flex justify-between py-[6.5px] items-center text-sm font-medium leading-5 pr-3 border-b border-b-[#D3E0E6]">
                   <p className="text-[#768396]">All-Time Low</p>
                   <div>
-                    <div className="flex gap-1">
+                    <div className="flex gap-1 justify-end">
                       <p className="text-[#111827]">${bitcoin?.atl}</p>
                       <span
                         className={
@@ -160,7 +158,7 @@ export const Performance = () => {
                             : 'text-[#0FBA83]'
                         }
                       >
-                        {bitcoin?.atl_change_percentage}
+                        {bitcoin?.atl_change_percentage}%
                       </span>
                     </div>
 
