@@ -1,7 +1,7 @@
 export const TAB_BUTTONS_ROUTES = [
   {
     id: 0,
-    route: '/#overview',
+    route: '/',
     label: 'Overview',
     active: true,
   },
