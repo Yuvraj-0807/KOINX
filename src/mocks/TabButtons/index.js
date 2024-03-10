@@ -31,13 +31,13 @@ export const TAB_BUTTONS_ROUTES = [
   },
   {
     id: 5,
-    route: '',
+    route: '/#technicals',
     label: 'Technicals',
     active: false,
   },
   {
     id: 6,
-    route: '',
+    route: '/#tokenomics',
     label: 'Tokenomics',
     active: false,
   },

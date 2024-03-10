@@ -10,3 +10,5 @@ export * from './Sentiments';
 export * from './ColoredBar';
 export * from './TabButtons';
 export * from './About';
+export * from './Tokenomics';
+export * from './Pie';
