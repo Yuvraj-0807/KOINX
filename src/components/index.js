@@ -12,3 +12,6 @@ export * from './TabButtons';
 export * from './About';
 export * from './Tokenomics';
 export * from './Pie';
+export * from './Team';
+export * from './Footer';
+export * from './TradingViewWidget';

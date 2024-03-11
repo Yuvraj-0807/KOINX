@@ -7,11 +7,12 @@ import { ArrowRight } from '../../assets/icons/icons';
 import { Loader } from '../Loader';
 
 export const About = () => {
-  const { bitcoin, isLoadingPerformance } = useMarketPerformance();
+  const { data, isLoadingPerformance } = useMarketPerformance();
 
-  console.log('bitcoin', bitcoin);
+  const bitcoin = data?.data[0];
+
   return (
-    <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-[33px]">
+    <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-[33px] rounded-lg">
       {isLoadingPerformance && (
         <div className="grid place-items-center">
           <Loader />
@@ -31,7 +32,7 @@ export const About = () => {
               <h2 className="text-[#0B1426] text-base font-bold">
                 What is Bitcoin?
               </h2>
-              <p className="text-base font-medium text-[#3E424A]">
+              <p className="text-base font-medium text-[var(--gray-100)]">
                 Bitcoin’s price today is US
                 {formatCurrency(bitcoin?.current_price)} with a 24-hour trading
                 volume of ${formatLargeNumber(Number(bitcoin?.total_volume))}.
@@ -57,7 +58,7 @@ export const About = () => {
               <h2 className="text-[#0B1426] text-base font-bold">
                 What is Bitcoin?
               </h2>
-              <div className="text-base font-medium text-[#3E424A] flex flex-col gap-4">
+              <div className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4">
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Aliquam placerat sit
                   lobortis tristique pharetra. Diam id et lectus urna et tellus
@@ -95,7 +96,7 @@ export const About = () => {
             <div className="flex flex-col gap-[10px] leading-[21.6px]">
               <div className="flex justify-between">
                 <div
-                  className="text-base font-medium text-[#3E424A] flex flex-col gap-4 p-3 rounded-md max-w-[388px] w-full"
+                  className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md max-w-[388px] w-full"
                   style={{
                     background:
                       'linear-gradient(to right, #79F1A4 0%, #0E5CAD 100%)',
@@ -122,7 +123,7 @@ export const About = () => {
                   </div>
                 </div>
                 <div
-                  className="text-base font-medium text-[#3E424A] flex flex-col gap-4 p-3 rounded-md max-w-[388px] w-full"
+                  className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md max-w-[388px] w-full"
                   style={{
                     background:
                       'linear-gradient(to right, #FF9865 5%, #EF3031 100%)',
@@ -147,7 +148,7 @@ export const About = () => {
               </div>
             </div>
           </section>
-          <p className="text-base font-medium text-[#3E424A] flex flex-col gap-4">
+          <p className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4">
             Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam
             massa vel convallis duis ac. Mi adipiscing semper scelerisque
             porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia

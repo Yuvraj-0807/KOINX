@@ -3,7 +3,7 @@ import { Pie } from '../Pie';
 
 export const Tokenomics = () => {
   return (
-    <div className="pt-6 px-6 pb-[60.2px] bg-white w-full flex flex-col gap-6">
+    <div className="pt-6 px-6 pb-[60.2px] bg-white w-full flex flex-col gap-6 rounded-lg">
       <a
         href="/#tokenomics"
         className="text-[var(--black)] text-2xl leading-[28.8px]"
@@ -29,7 +29,7 @@ export const Tokenomics = () => {
             </div>
           </div>
         </div>
-        <p className="font-medium text-base  leading-[25.6px] text-[#3E424A]">
+        <p className="font-medium text-base  leading-[25.6px] text-[var(--gray-100)]">
           Lorem ipsum dolor sit amet consectetur. Cras aliquet tristique ornare
           vestibulum nunc dignissim vel consequat. Leo etiam nascetur bibendum
           amet enim sit eget leo amet. At metus orci augue fusce eleifend lectus

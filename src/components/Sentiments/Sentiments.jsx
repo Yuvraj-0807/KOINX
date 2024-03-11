@@ -5,7 +5,7 @@ import { ColoredBar } from '../ColoredBar/ColoredBar';
 
 export const Sentiments = () => {
   return (
-    <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-[33px]">
+    <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-[33px] rounded-lg">
       <section className="flex flex-col gap-[17px]">
         <a
           href="/#sentiments"

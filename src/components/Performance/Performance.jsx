@@ -6,7 +6,10 @@ import { formatCurrency, formatDate } from '../../utils';
 import { Loader } from '../Loader';
 
 export const Performance = () => {
-  const { bitcoin, isLoadingPerformance } = useMarketPerformance();
+  const { data, isLoadingPerformance } = useMarketPerformance();
+
+  const bitcoin = data?.data[0];
+  console.log('bitcoin', bitcoin);
 
   function formatDateToString(dateString) {
     return new Date(dateString).toLocaleDateString();
@@ -18,15 +21,15 @@ export const Performance = () => {
   const atlDate = new Date(formatDateToString(bitcoin?.atl_date));
 
   return (
-    <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-6">
+    <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-6 rounded-lg">
       <h2 className="text-[var(--black)] text-2xl leading-[28.8px]">
         Performance
       </h2>
-      {isLoadingPerformance && (
+      {isLoadingPerformance && bitcoin === undefined ? (
         <div className="grid place-items-center">
           <Loader />
         </div>
-      )}
+      ) : null}
       {!isLoadingPerformance && (
         <>
           <section className="flex flex-col gap-[15px]">

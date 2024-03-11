@@ -3,6 +3,7 @@ import React from 'react';
 import {
   Aside,
   Breadcrumbs,
+  Footer,
   MainContent,
   NavBar,
   Providers,
@@ -39,6 +40,7 @@ export function LandingPageLayout() {
           </div>
         </div>
       </main>
+      <Footer />
       <Outlet />
     </Providers>
   );

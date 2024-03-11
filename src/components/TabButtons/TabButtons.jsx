@@ -1,19 +1,19 @@
 import React from 'react';
 import { cn } from '../../libs/classnames';
+import { Link } from 'react-router-dom';
 
 export const TabButtons = ({ tabs }) => {
   const [activeTab, setActiveTab] = React.useState(tabs[0].id);
 
   const handleClick = (id, route) => {
-    console.log(id, route);
     setActiveTab(id);
   };
   return (
     <div className="w-full flex gap-8 overflow-x-auto whitespace-nowrap border-b-[#D3E0E6] border-b pt-[14.5px]">
       {tabs.map((tab) => {
         return (
-          <a
-            href={tab.route}
+          <Link
+            to={tab.route}
             onClick={() => handleClick(tab.id, tab.route)}
             key={tab.id}
             className={cn(
@@ -23,7 +23,7 @@ export const TabButtons = ({ tabs }) => {
             )}
           >
             {tab.label}
-          </a>
+          </Link>
         );
       })}
     </div>
