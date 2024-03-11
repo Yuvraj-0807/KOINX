@@ -20,7 +20,7 @@ export const Team = () => {
         return (
           <section
             key={team.id}
-            className="flex p-[11.9px] gap-8 items-center bg-[#E8F4FD] rounded-lg"
+            className="flex max-md:flex-col p-[11.9px] gap-8 items-center bg-[#E8F4FD] rounded-lg"
           >
             <div className="flex flex-col gap-3 max-w-[96px] w-full">
               <img

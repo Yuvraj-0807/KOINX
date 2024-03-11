@@ -18,7 +18,7 @@ export const MainContent = () => {
   console.log('location', location);
 
   return (
-    <div className="max-w-[881px] w-full flex flex-col gap-5">
+    <div className="w-full flex flex-col gap-5">
       <Graph />
 
       <TabButtons tabs={TAB_BUTTONS_ROUTES} />

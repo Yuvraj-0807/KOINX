@@ -93,9 +93,9 @@ export const About = () => {
               Already Holding Bitcoin?
             </p>
             <div className="flex flex-col gap-[10px] leading-[21.6px]">
-              <div className="flex justify-between">
+              <div className="flex max-md:flex-col max-md:gap-[14px] justify-between">
                 <div
-                  className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md max-w-[388px] w-full"
+                  className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md lg:max-w-[388px] w-full"
                   style={{
                     background:
                       'linear-gradient(to right, #79F1A4 0%, #0E5CAD 100%)',
@@ -107,7 +107,7 @@ export const About = () => {
                       alt=""
                       className="w-[128px] h-[128px]"
                     />
-                    <div className="max-w-[195px] w-full flex flex-col gap-4">
+                    <div className="lg:max-w-[195px] w-full flex flex-col gap-4">
                       <h3 className="font-bold text-xl leading-7 text-white">
                         Calculate your profits
                       </h3>
@@ -122,7 +122,7 @@ export const About = () => {
                   </div>
                 </div>
                 <div
-                  className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md max-w-[388px] w-full"
+                  className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md lg:max-w-[388px] w-full"
                   style={{
                     background:
                       'linear-gradient(to right, #FF9865 5%, #EF3031 100%)',
@@ -130,7 +130,7 @@ export const About = () => {
                 >
                   <div className="flex items-center gap-7">
                     <img src={trading} alt="" className="w-[128px] h-[128px]" />
-                    <div className="max-w-[195px] w-full flex flex-col gap-4">
+                    <div className="lg:max-w-[195px] w-full flex flex-col gap-4">
                       <h3 className="font-bold text-xl leading-7 text-white">
                         Calculate your tax liability
                       </h3>

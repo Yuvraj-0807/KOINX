@@ -8,7 +8,6 @@ import {
   NavBar,
   Providers,
 } from '../components';
-import { Outlet } from 'react-router';
 
 export function LandingPageLayout() {
   const breadCrumbLinks = [
@@ -32,16 +31,13 @@ export function LandingPageLayout() {
       <main className="pt-[17.19px] pb-[78px] bitcoin-bg">
         <div className="wrapper flex flex-col gap-[17.81px]">
           <Breadcrumbs breadcrumbs={breadCrumbLinks} />
-          <div className="flex justify-between gap-5">
+          <div className="flex flex-col lg:flex-row justify-between gap-5">
             <MainContent />
-            <div className="lg:block hidden max-w-[426px] w-full">
-              <Aside />
-            </div>
+            <Aside />
           </div>
         </div>
       </main>
       <Footer />
-      <Outlet />
     </Providers>
   );
 }

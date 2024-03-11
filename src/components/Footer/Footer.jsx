@@ -20,14 +20,14 @@ export const Footer = () => {
   };
 
   return (
-    <div className="flex flex-col gap-[30px] pt-[68px] pb-[97.89px]">
+    <div className="flex flex-col gap-[30px] pt-[68px] pb-[97.89px] overflow-x-hidden">
       <div className="relative">
         {activeIndex !== 0 && (
           <button
             onClick={() => prevSlide(setActiveIndex, coins)}
-            className="absolute z-10 rotate-180 left-0 bottom-[40%]"
+            className="absolute z-10 rotate-180 left-[40px] bottom-[40%] border rounded-full"
           >
-            <img src={CarouselRight} alt="" className="w-12 h-12" />
+            <img src={CarouselRight} alt="" className="w-8 h-8" />
           </button>
         )}
         <div className="wrapper">
@@ -82,9 +82,9 @@ export const Footer = () => {
             {activeIndex !== coins?.length - 1 && (
               <button
                 onClick={() => nextSlide(setActiveIndex, coins)}
-                className="absolute right-0 bottom-[40%]"
+                className="absolute left-[94%] top-[50%] border rounded-full z-10"
               >
-                <img src={CarouselRight} alt="" className="w-12 h-12" />
+                <img src={CarouselRight} alt="" className="w-8 h-8" />
               </button>
             )}
           </div>
@@ -96,9 +96,9 @@ export const Footer = () => {
         {activeIndex !== 0 && (
           <button
             onClick={() => prevSlide(setActiveIndexTrending, coins)}
-            className="absolute z-10 rotate-180 left-0 bottom-[40%]"
+            className="absolute z-10 rotate-180 left-[40px] top-[50%] border rounded-full"
           >
-            <img src={CarouselRight} alt="" className="w-12 h-12" />
+            <img src={CarouselRight} alt="" className="w-8 h-8" />
           </button>
         )}
         <div className="wrapper">
@@ -152,10 +152,10 @@ export const Footer = () => {
 
             {activeIndex !== coins?.length - 1 && (
               <button
-                onClick={() => nextSlide(setActiveIndexTrending, coins)}
-                className="absolute right-0 bottom-[40%]"
+                onClick={() => nextSlide(setActiveIndex, coins)}
+                className="absolute left-[94%] top-[50%] border rounded-full z-10"
               >
-                <img src={CarouselRight} alt="" className="w-12 h-12" />
+                <img src={CarouselRight} alt="" className="w-8 h-8" />
               </button>
             )}
           </div>

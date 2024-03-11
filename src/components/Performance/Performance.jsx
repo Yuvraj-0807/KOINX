@@ -81,8 +81,8 @@ export const Performance = () => {
                 className="w-[16.67px] h-[16.67px]"
               />
             </div>
-            <div className="flex justify-between gap-[98.83px]">
-              <div className="max-w-[344px] w-full">
+            <div className="flex max-md:flex-col max-md:gap-0 justify-between gap-[98.83px]">
+              <div className="lg:max-w-[344px] w-full">
                 <div className="flex justify-between py-4 text-sm font-medium leading-5 pr-3 border-b border-b-[#D3E0E6]">
                   <p className="text-[#768396]">Bitcoin Price</p>
                   <p className="text-[#111827]">
@@ -116,7 +116,7 @@ export const Performance = () => {
                 </div>
               </div>
               {/* Right */}
-              <div className="max-w-[344px] w-full">
+              <div className="lg:max-w-[344px] w-full">
                 <div className="flex justify-between py-4 text-sm font-medium leading-5 pr-3 border-b border-b-[#D3E0E6]">
                   <p className="text-[#768396]">Market Cap</p>
                   <p className="text-[#111827]">

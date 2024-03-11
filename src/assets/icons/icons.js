@@ -5,6 +5,7 @@ import Infographic from './infographic.svg';
 import Newspaper from './Newspaper.svg';
 import Chart from './Chart.svg';
 import CarouselRight from './CarouselRight.svg';
+import Hamburger from './hamburger.svg';
 
 export {
   LessThanArrows,
@@ -14,4 +15,5 @@ export {
   Newspaper,
   Chart,
   CarouselRight,
+  Hamburger,
 };
