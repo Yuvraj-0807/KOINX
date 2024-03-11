@@ -6,6 +6,7 @@ import {
   About,
   Tokenomics,
   Team,
+  Graph,
 } from '../../components';
 
 import { TAB_BUTTONS_ROUTES } from '../../mocks/TabButtons';
@@ -18,7 +19,8 @@ export const MainContent = () => {
 
   return (
     <div className="max-w-[881px] w-full flex flex-col gap-5">
-      MainContent
+      <Graph />
+
       <TabButtons tabs={TAB_BUTTONS_ROUTES} />
       {location.hash === '' && (
         <>

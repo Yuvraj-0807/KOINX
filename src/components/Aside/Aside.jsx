@@ -34,17 +34,17 @@ export const Aside = () => {
           <img src={ArrowRight} alt="" className="w-5 h-5" />
         </BaseButton>
       </div>
+
       {/* Trendong Coins */}
       <div className="flex flex-col bg-white gap-6 p-6 rounded-lg">
         <h2 className="text-[var(--black)] text-2xl font-semibold leading-[28.8px]">
           Trending Coins (24h)
         </h2>
-        {isPending && (
+        {isPending ? (
           <div className="grid place-items-center">
             <Loader />
           </div>
-        )}
-        {!isPending && (
+        ) : (
           <>
             {coins?.slice(0, 3).map((coin) => {
               return (

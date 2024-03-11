@@ -13,12 +13,11 @@ export const About = () => {
 
   return (
     <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-[33px] rounded-lg">
-      {isLoadingPerformance && (
+      {isLoadingPerformance ? (
         <div className="grid place-items-center">
           <Loader />
         </div>
-      )}
-      {!isLoadingPerformance && (
+      ) : (
         <div className="flex flex-col gap-[15px]">
           <section className="flex flex-col gap-[17px] border-b border-b-[#C9CFDD] pb-[15px]">
             <a

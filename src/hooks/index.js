@@ -1,4 +1,4 @@
 export * from './useToastify';
-export * from './useContact';
+export * from './useSimplePrice';
 export * from './useTrending';
 export * from './useMarketPerformance';

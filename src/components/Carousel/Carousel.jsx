@@ -6,8 +6,6 @@ import { cn } from '../../libs/classnames';
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
-  console.log('active index', activeIndex);
-
   const nextSlide = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === KEY_EVENTS_DETAILS.length - 1 ? 0 : prevIndex + 1,

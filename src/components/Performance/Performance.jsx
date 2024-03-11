@@ -10,6 +10,7 @@ export const Performance = () => {
 
   const bitcoin = data?.data[0];
   console.log('bitcoin', bitcoin);
+  console.log('isLoadingPerformance', isLoadingPerformance);
 
   function formatDateToString(dateString) {
     return new Date(dateString).toLocaleDateString();
@@ -25,12 +26,11 @@ export const Performance = () => {
       <h2 className="text-[var(--black)] text-2xl leading-[28.8px]">
         Performance
       </h2>
-      {isLoadingPerformance && bitcoin === undefined ? (
+      {isLoadingPerformance ? (
         <div className="grid place-items-center">
           <Loader />
         </div>
-      ) : null}
-      {!isLoadingPerformance && (
+      ) : (
         <>
           <section className="flex flex-col gap-[15px]">
             <div className="flex gap-[56px] items-center flex-wrap">

@@ -6,3 +6,4 @@ export { default as trading } from './trading.png';
 export { default as johnSmith } from './johnSmith.png';
 export { default as elinaWilliams } from './elinaWilliams.png';
 export { default as sandeep } from './sandeep.png';
+export { default as bitcoin } from './bitcoin.png';

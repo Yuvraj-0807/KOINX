@@ -15,3 +15,4 @@ export * from './Pie';
 export * from './Team';
 export * from './Footer';
 export * from './TradingViewWidget';
+export * from './Graph';

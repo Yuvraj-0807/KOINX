@@ -28,15 +28,31 @@ export const formatLargeNumber = (number) => {
   return number.toFixed(1) + abbreviations[suffixIndex];
 };
 
-export const formatCurrency = (amount, fractionalDigit = 0) => {
+export const formatCurrency = (
+  amount,
+  fractionalDigit = 0,
+  currency = 'USD',
+  language = 'en-US',
+) => {
   const formatting_options = {
     style: 'currency',
-    currency: 'USD',
+    currency: currency,
     minimumFractionDigits: fractionalDigit,
   };
-  const dollarString = new Intl.NumberFormat('en-US', formatting_options);
+  const dollarString = new Intl.NumberFormat(language, formatting_options);
   if (!amount) {
     return dollarString.format(0);
   }
   return dollarString.format(amount);
+};
+
+export const nextSlide = (setActiveIndex, endpoint) => {
+  setActiveIndex((prevIndex) =>
+    prevIndex === endpoint?.length - 1 ? 0 : prevIndex + 1,
+  );
+};
+export const prevSlide = (setActiveIndex, endpoint) => {
+  setActiveIndex((prevIndex) =>
+    prevIndex === 0 ? endpoint?.length - 1 : prevIndex - 1,
+  );
 };

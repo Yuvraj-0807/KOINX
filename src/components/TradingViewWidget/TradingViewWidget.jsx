@@ -1,3 +1,4 @@
+// TradingViewWidget.jsx
 import React, { useEffect, useRef, memo } from 'react';
 
 function TradingViewWidget() {
@@ -12,15 +13,19 @@ function TradingViewWidget() {
     script.innerHTML = `
         {
           "autosize": true,
-          "symbol": "NASDAQ:AAPL",
-          "interval": "D",
+          "symbol": "BITSTAMP:BTCUSD",
           "timezone": "Etc/UTC",
-          "theme": "dark",
-          "style": "1",
+          "theme": "light",
+          "style": "3",
           "locale": "en",
           "enable_publishing": false,
+          "gridColor": "rgba(0, 0, 0, 0.06)",
+          "hide_top_toolbar": true,
+          "range": "YTD",
           "allow_symbol_change": true,
+          "save_image": false,
           "calendar": false,
+          "hide_volume": true,
           "support_host": "https://www.tradingview.com"
         }`;
     container.current.appendChild(script);
