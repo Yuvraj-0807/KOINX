@@ -90,7 +90,7 @@ export const About = () => {
               Already Holding Bitcoin?
             </p>
             <div className="flex flex-col gap-[10px] leading-[21.6px]">
-              <div className="flex max-md:flex-col max-md:gap-[14px] justify-between">
+              <div className="flex max-md:flex-col max-md:gap-[14px] gap-[14px] justify-between">
                 <div
                   className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md lg:max-w-[388px] w-full"
                   style={{
