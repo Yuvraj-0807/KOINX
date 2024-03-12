@@ -110,14 +110,10 @@ export const About = () => {
                       </h3>
                       <BaseButton
                         variant="secondary"
-                        className="max-w-[132px] text-sm w-full flex gap-[9px]"
+                        className="max-w-[132px] max-sm:max-w-[123px] max-sm:text-xs max-sm:gap-1 text-sm w-full flex gap-[9px]"
                       >
                         Check Now
-                        <img
-                          src={ArrowRight}
-                          alt=""
-                          className="w-5 h-5 max-sm:hidden"
-                        />
+                        <img src={ArrowRight} alt="" className="w-5 h-5" />
                       </BaseButton>
                     </div>
                   </div>
@@ -137,14 +133,10 @@ export const About = () => {
                       </h3>
                       <BaseButton
                         variant="secondary"
-                        className="max-w-[132px] text-sm w-full flex gap-[9px]"
+                        className="max-w-[132px] max-sm:max-w-[123px] max-sm:text-xs max-sm:gap-1 text-sm w-full flex gap-[9px]"
                       >
                         Check Now
-                        <img
-                          src={ArrowRight}
-                          alt=""
-                          className="w-5 h-5 max-sm:hidden"
-                        />
+                        <img src={ArrowRight} alt="" className="w-5 h-5" />
                       </BaseButton>
                     </div>
                   </div>
