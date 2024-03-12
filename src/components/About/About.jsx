@@ -91,8 +91,8 @@ export const About = () => {
             </p>
             <div className="flex flex-col gap-[10px] leading-[21.6px]">
               <div className="flex max-md:flex-col max-md:gap-[14px] gap-[14px] justify-between">
-                <div
-                  className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md lg:max-w-[388px] w-full"
+                <button
+                  className="text-base cursor-pointer font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md lg:max-w-[388px] w-full"
                   style={{
                     background:
                       'linear-gradient(to right, #79F1A4 0%, #0E5CAD 100%)',
@@ -117,9 +117,9 @@ export const About = () => {
                       </BaseButton>
                     </div>
                   </div>
-                </div>
+                </button>
                 <div
-                  className="text-base font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md lg:max-w-[388px] w-full"
+                  className="text-base cursor-pointer font-medium text-[var(--gray-100)] flex flex-col gap-4 p-3 rounded-md lg:max-w-[388px] w-full"
                   style={{
                     background:
                       'linear-gradient(to right, #FF9865 5%, #EF3031 100%)',
