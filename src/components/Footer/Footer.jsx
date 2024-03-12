@@ -3,6 +3,7 @@ import { useTrending } from '../../hooks';
 import { Loader } from '../Loader';
 import { CarouselRight } from '../../assets';
 import { prevSlide, nextSlide } from '../../utils';
+import { cn } from '../../libs/classnames';
 
 export const Footer = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -61,7 +62,15 @@ export const Footer = () => {
                           <p className="text-base text-[#202020] leading-[19.36px]">
                             {coin?.item?.symbol}
                           </p>
-                          <div className="p-[2.75px] bg-[var(--green)] text-[#32BE88] text-xs leading-[14.52px]">
+                          <div
+                            className={cn(
+                              'max-w-[50px] w-full flex items-center justify-center rounded-sm  p-[2.75px] text-xs leading-[14.52px]',
+                              coin?.item?.data?.price_change_percentage_24h
+                                ?.btc < 0
+                                ? 'bg-[#EE68551A] text-[#E96975]'
+                                : 'bg-[var(--green)] text-[var(--green-50)]',
+                            )}
+                          >
                             {coin?.item?.data?.price_change_percentage_24h?.btc.toFixed(
                               2,
                             )}

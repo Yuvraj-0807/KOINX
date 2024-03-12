@@ -59,7 +59,7 @@ export const Aside = () => {
                     </div>
                     <div
                       className={cn(
-                        'py-[4.5px] px-[10px] flex items-center justify-between gap-[5.5px] rounded',
+                        'py-[4.5px] max-w-[90px] w-full flex items-center justify-center gap-[5.5px] rounded',
                         coin?.item?.data?.price_change_percentage_24h?.btc < 0
                           ? 'bg-[#EE68551A] text-[#E96975]'
                           : 'bg-[var(--green)] text-[var(--green-50)]',
@@ -81,7 +81,7 @@ export const Aside = () => {
                         <path d="M5.5 0L11 8H0L5.5 0Z" fill="currentColor" />
                       </svg>
 
-                      <p className="text-base leading-[19.36px]">
+                      <p className="text-sm leading-[19.36px]">
                         {coin?.item?.data?.price_change_percentage_24h?.btc.toFixed(
                           2,
                         )}

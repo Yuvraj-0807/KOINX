@@ -38,8 +38,8 @@ export const Performance = () => {
       ) : (
         <>
           <section className="flex flex-col gap-[15px]">
-            <div className="flex gap-2 items-center flex-wrap">
-              <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[100px] w-full">
+            <div className="flex gap-2 justify-between items-center">
+              <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[90px] w-full">
                 <p className="text-[13.78px] leading-5">Today's Lows</p>
                 <p className="text-[15.63px] font-medium leading-[22px]">
                   {bitcoin?.low_24h}
@@ -64,15 +64,15 @@ export const Performance = () => {
                 </div> */}
               </div>
 
-              <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[100px] w-full">
+              <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[90px] w-full">
                 <p className="text-[13.78px] leading-5">Today's High</p>
                 <p className="text-[15.63px] font-medium leading-[22px]">
                   {bitcoin?.high_24h}
                 </p>
               </div>
             </div>
-            <div className="flex gap-2 items-center flex-wrap">
-              <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[100px] w-full">
+            <div className="flex gap-2 justify-between items-center">
+              <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[90px] w-full">
                 <p className="text-[13.78px] leading-5">52W Lows</p>
                 <p className="text-[15.63px] font-medium leading-[22px]">
                   {bitcoin?.low_24h}
@@ -86,7 +86,7 @@ export const Performance = () => {
                 }}
               ></div>
 
-              <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[100px] w-full">
+              <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[90px] w-full">
                 <p className="text-[13.78px] leading-5">52W High</p>
                 <p className="text-[15.63px] font-medium leading-[22px]">
                   {bitcoin?.high_24h}
