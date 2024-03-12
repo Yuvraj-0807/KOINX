@@ -41,7 +41,9 @@ export const Graph = () => {
             </p>
           </div>
         </div>
-        <TradingViewWidget />
+        <div className="h-[460px]">
+          <TradingViewWidget />
+        </div>
       </div>
     </div>
   );
