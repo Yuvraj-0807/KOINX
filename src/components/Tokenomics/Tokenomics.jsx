@@ -14,7 +14,7 @@ export const Tokenomics = () => {
           <h2 className="text-[#1D1D1D]">Initial Distribution</h2>
         </div>
         <div className="flex gap-[6px] font-semibold text-lg leading-5">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 max-sm:flex-col">
             <Pie percentage={80} colour={'#0082FF'} />
             <div className="flex flex-col gap-4 text-base font-normal leading-4 text-[#202020]">
               <div className="flex gap-1">

@@ -113,7 +113,11 @@ export const About = () => {
                         className="max-w-[132px] text-sm w-full flex gap-[9px]"
                       >
                         Check Now
-                        <img src={ArrowRight} alt="" className="w-5 h-5" />
+                        <img
+                          src={ArrowRight}
+                          alt=""
+                          className="w-5 h-5 max-sm:hidden"
+                        />
                       </BaseButton>
                     </div>
                   </div>
@@ -136,7 +140,11 @@ export const About = () => {
                         className="max-w-[132px] text-sm w-full flex gap-[9px]"
                       >
                         Check Now
-                        <img src={ArrowRight} alt="" className="w-5 h-5" />
+                        <img
+                          src={ArrowRight}
+                          alt=""
+                          className="w-5 h-5 max-sm:hidden"
+                        />
                       </BaseButton>
                     </div>
                   </div>
