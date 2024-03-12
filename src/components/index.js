@@ -16,3 +16,4 @@ export * from './Team';
 export * from './Footer';
 export * from './TradingViewWidget';
 export * from './Graph';
+export * from './Carousel';

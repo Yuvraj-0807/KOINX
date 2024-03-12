@@ -1,5 +1,4 @@
-import React from 'react';
-import { Pie } from '../Pie';
+import { Pie } from '../../components';
 
 export const Tokenomics = () => {
   return (
@@ -17,7 +16,7 @@ export const Tokenomics = () => {
         <div className="flex gap-[6px] font-semibold text-lg leading-5">
           <div className="flex items-center gap-6">
             <Pie percentage={80} colour={'#0082FF'} />
-            <div className="flex flex-col gap-4 text-base leading-4 text-[#202020]">
+            <div className="flex flex-col gap-4 text-base font-normal leading-4 text-[#202020]">
               <div className="flex gap-1">
                 <div className="w-4 h-4 rounded-full bg-[#0082FF]"></div>
                 <p>Crowdsale investors: 80%</p>

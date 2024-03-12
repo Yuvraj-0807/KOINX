@@ -1,10 +1,7 @@
-import React from 'react';
 import { useMarketPerformance } from '../../hooks';
 import { formatCurrency, formatLargeNumber } from '../../utils';
-import { holdingPhone, trading } from '../../assets/images/images';
-import { BaseButton } from '../Button';
-import { ArrowRight } from '../../assets/icons/icons';
-import { Loader } from '../Loader';
+import { ArrowRight, holdingPhone, trading } from '../../assets';
+import { Loader, BaseButton } from '../../components';
 
 export const About = () => {
   const { data, isLoadingPerformance } = useMarketPerformance();

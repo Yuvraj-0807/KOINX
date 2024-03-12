@@ -1,4 +1,3 @@
-import React from 'react';
 import { TEAMS_DETAILS } from '../../mocks/Teams';
 
 export const Team = () => {

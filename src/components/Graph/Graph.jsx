@@ -1,13 +1,11 @@
-import React from 'react';
 import TradingViewWidget from '../TradingViewWidget/TradingViewWidget';
 import { useSimplePrice } from '../../hooks';
-import { bitcoin } from '../../assets/images/images';
+import { bitcoin } from '../../assets';
 import { formatCurrency } from '../../utils';
 
 export const Graph = () => {
   const { simplePrice } = useSimplePrice();
 
-  console.log('price', simplePrice);
   return (
     <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-6 rounded-lg">
       <div className="flex flex-col gap-10">

@@ -1,9 +1,6 @@
-import React from 'react';
-import { ladyVirtualImage } from '../../assets/images/images';
-import { BaseButton } from '../Button';
-import { ArrowRight } from '../../assets/icons/icons';
+import { BaseButton, Loader } from '../../components';
+import { ArrowRight, ladyVirtualImage } from '../../assets';
 import { useTrending } from '../../hooks';
-import { Loader } from '../Loader';
 import { cn } from '../../libs/classnames';
 
 export const Aside = () => {

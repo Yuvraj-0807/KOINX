@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router';
-import { LessThanArrows } from '../../assets/icons/icons';
+import { LessThanArrows } from '../../assets';
 
 export const Breadcrumbs = ({ breadcrumbs }) => {
   const navigate = useNavigate();

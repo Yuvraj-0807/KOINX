@@ -1,7 +1,5 @@
-import React from 'react';
-import { Infographic } from '../../assets/icons/icons';
-import Carousel from '../Carousel/Carousel';
-import { ColoredBar } from '../ColoredBar/ColoredBar';
+import { Infographic } from '../../assets';
+import { ColoredBar, Carousel } from '../../components';
 
 export const Sentiments = () => {
   return (
@@ -25,31 +23,16 @@ export const Sentiments = () => {
           <img src={Infographic} alt="" className="w-5 h-5" />
         </div>
         <div className="flex gap-10 items-center">
-          <div className="bg-[var(--green)] w-[116.98px] h-[120px] rounded-full flex justify-center items-center">
+          <div className="bg-[var(--green)] max-w-[116.98px] w-full h-[120px] rounded-full flex justify-center items-center">
             <p className="font-medium  leading-[44.06px] text-[var(--green-100)] flex">
               <span className="text-[36.41px]">76</span>
               <span className="w-[14px] h-[22px]">%</span>
             </p>
           </div>
-          <div>
-            <ColoredBar
-              label="Buy"
-              percentage="76%"
-              background="#00B386"
-              width="349.14px"
-            />
-            <ColoredBar
-              label="Hold"
-              percentage="8%"
-              background="#C7C8CE"
-              width="33px"
-            />
-            <ColoredBar
-              label="Sell"
-              percentage="16%"
-              background="#F7324C"
-              width="66.5px"
-            />
+          <div className="w-full flex flex-col gap-4">
+            <ColoredBar label="Buy" percentage={76} background="#00B386" />
+            <ColoredBar label="Hold" percentage={8} background="#C7C8CE" />
+            <ColoredBar label="Sell" percentage={16} background="#F7324C" />
           </div>
         </div>
       </section>

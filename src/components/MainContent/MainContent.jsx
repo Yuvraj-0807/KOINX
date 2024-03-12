@@ -15,8 +15,6 @@ import { useLocation } from 'react-router';
 export const MainContent = () => {
   const location = useLocation();
 
-  console.log('location', location);
-
   return (
     <div className="w-full flex flex-col gap-5">
       <Graph />

@@ -1,13 +1,19 @@
-import { Hamburger } from '../../assets/icons/icons';
-import { logo } from '../../assets/images/images';
+import { useNavigate } from 'react-router';
+import { Hamburger, logo } from '../../assets';
 
-import { BaseButton } from '../Button';
+import { BaseButton } from '../../components';
 
 export function NavBar() {
+  const navigate = useNavigate();
   return (
-    <nav className="border border-b-[#DEDFE2] max-w-[1440px] w-full">
-      <div className="wrapper flex justify-between py-7 items-center ">
-        <img src={logo} alt="" />
+    <nav className="border border-b-[#DEDFE2]">
+      <div className="wrapper flex justify-between py-7 items-center">
+        <img
+          src={logo}
+          alt=""
+          onClick={() => navigate('/')}
+          className="cursor-pointer"
+        />
         <div className="hidden md:flex gap-[45px] items-center">
           <div className="flex gap-8 text-base font-semibold text-[var(--black)]">
             <h2>Cryto Taxes</h2>

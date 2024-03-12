@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTrending } from '../../hooks';
 import { Loader } from '../Loader';
-import { CarouselRight } from '../../assets/icons/icons';
+import { CarouselRight } from '../../assets';
 import { prevSlide, nextSlide } from '../../utils';
 
 export const Footer = () => {
@@ -152,7 +152,7 @@ export const Footer = () => {
 
             {activeIndex !== coins?.length - 1 && (
               <button
-                onClick={() => nextSlide(setActiveIndex, coins)}
+                onClick={() => nextSlide(setActiveIndexTrending, coins)}
                 className="absolute left-[94%] top-[50%] border rounded-full z-10"
               >
                 <img src={CarouselRight} alt="" className="w-8 h-8" />

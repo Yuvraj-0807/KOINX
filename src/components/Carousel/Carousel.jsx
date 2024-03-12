@@ -1,9 +1,9 @@
 import React from 'react';
-import { CarouselRight } from '../../assets/icons/icons';
+import { CarouselRight } from '../../assets';
 import { KEY_EVENTS_DETAILS } from '../../mocks';
 import { cn } from '../../libs/classnames';
 
-const Carousel = () => {
+export const Carousel = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const nextSlide = () => {
@@ -68,5 +68,3 @@ const Carousel = () => {
     </div>
   );
 };
-
-export default Carousel;
