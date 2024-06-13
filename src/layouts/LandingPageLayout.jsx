@@ -31,7 +31,7 @@ export function LandingPageLayout() {
       <main className="pt-[17.19px] pb-[78px] bitcoin-bg">
         <div className="wrapper flex flex-col gap-[17.81px]">
           <Breadcrumbs breadcrumbs={breadCrumbLinks} />
-          <div className="flex flex-col lg:flex-row justify-between gap-5">
+          <div className="flex flex-col xl:flex-row justify-between gap-5">
             <MainContent />
             <Aside />
           </div>
