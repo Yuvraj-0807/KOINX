@@ -4,9 +4,7 @@ import { ArrowRight, holdingPhone, trading } from '../../assets';
 import { Loader, BaseButton } from '../../components';
 
 export const About = () => {
-  const { data, isLoadingPerformance } = useMarketPerformance();
-
-  const bitcoin = data?.data[0];
+  const { bitcoin, isLoadingPerformance } = useMarketPerformance();
 
   return (
     <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-[33px] rounded-lg">

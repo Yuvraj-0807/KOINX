@@ -5,11 +5,7 @@ import { formatCurrency, formatDate } from '../../utils';
 import { Loader } from '../../components';
 
 export const Performance = () => {
-  const { data, isLoadingPerformance } = useMarketPerformance();
-  // const maxWidthOfPerformanceIndicator = 582;
-
-  const bitcoin = data?.data[0];
-  // const custom = bitcoin?.current_price;
+  const { bitcoin, isLoadingPerformance } = useMarketPerformance();
 
   function formatDateToString(dateString) {
     return new Date(dateString).toLocaleDateString();
@@ -19,12 +15,6 @@ export const Performance = () => {
 
   const athDate = new Date(formatDateToString(bitcoin?.ath_date));
   const atlDate = new Date(formatDateToString(bitcoin?.atl_date));
-
-  // const answer = bitcoin?.high_24h - bitcoin?.low_24h;
-  // const new_answer = bitcoin?.high_24h - custom;
-  // const width = (new_answer / answer) * 100;
-  // const final_answer = (width / 100) * maxWidthOfPerformanceIndicator;
-  // console.log('final_answer', final_answer);
 
   return (
     <div className="pt-6 pl-6 pr-[26px] pb-[53.2px] bg-white w-full flex flex-col gap-6 rounded-lg">
@@ -53,15 +43,6 @@ export const Performance = () => {
                       'linear-gradient(to right, #FF4949 0%, #FF4E11 16.67%, #FC870A 33.33%, #FFAF11 50%, #C2CB21 66.67%, #11EB68 83.3%, #11EB68 100%)',
                   }}
                 ></div>
-                {/* <div
-                  className="absolute flex flex-col text-center"
-                  style={{ left: `${final_answer}px` }}
-                >
-                  <img src={indicator} alt="" className="h-[8px]" />
-                  <p className="font-base text-sm leading-5 text-[#44475B]">
-                    {formatCurrency(custom)}
-                  </p>
-                </div> */}
               </div>
 
               <div className="flex flex-col gap-[10px] text-[var(--gray)] max-w-[90px] w-full">

@@ -16,5 +16,5 @@ export function useMarketPerformance(sparkline) {
       ),
   });
 
-  return { data, isLoadingPerformance, sparkline };
+  return { bitcoin: data?.data?.[0], isLoadingPerformance, sparkline };
 }
