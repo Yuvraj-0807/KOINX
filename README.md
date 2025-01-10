@@ -1,7 +1,3 @@
-### *README.md*
-
-markdown
-
 # KOINX APP
 
 Welcome to the React App! This guide will walk you through the steps to clone, set up, and run the project.
