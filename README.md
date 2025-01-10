@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+### *README.md*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+markdown
 
-## Available Scripts
+# KOINX APP
 
-In the project directory, you can run:
+Welcome to the React App! This guide will walk you through the steps to clone, set up, and run the project.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Getting Started**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **1. Clone the Repository**
+First, clone the repository to your local machine:
+bash
+git clone <repository_url>
+cd <repository_folder>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### **2. Install Yarn**
+If Yarn is not already installed on your system, you can install it by following the steps below:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### **For npm users:**
+bash
+npm install -g yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### **For macOS using Homebrew:**
+bash
+brew install yarn
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### **For Windows using Chocolatey:**
+bash
+choco install yarn
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For more detailed installation instructions, visit the official [Yarn documentation](https://classic.yarnpkg.com/en/docs/install).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### **3. Install Dependencies**
+Navigate to the project directory and install the required dependencies:
+bash
+yarn install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### **4. Run the Project**
+Start the project using:
+bash
+yarn run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+You will see the following project command options:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **`dev:build`**: Builds the app for production.
+  bash
+  yarn dev:build
+  
 
-### Making a Progressive Web App
+- **`dev:start`**: Runs the app in development mode.
+  bash
+  yarn dev:start
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **`eject`**: Ejects the app configuration (irreversible).
+  bash
+  yarn eject
+  
 
-### Advanced Configuration
+- **`test`**: Runs the test suite.
+  bash
+  yarn test
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Select any of these commands based on what you want to do.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## **Project Structure**
+- **`src/`**: Contains the source code (components, styles, etc.).
+- **`public/`**: Contains public assets (e.g., `index.html`).
+- **`package.json`**: Lists project dependencies and scripts.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Support**
+For any issues or queries, feel free to contact the project maintainer or open an issue in the repository.
+
+Happy coding! 🚀
+
+# Design Link - > https://www.figma.com/file/VRj5MqVPoQdj5N7AwmYc98/KoinX---Frontend-Intern-Assignment?type=design&node-id=57-439&mode=design&t=tOnH9MaPPyvKIy9t-0
+
+# KoinX Assignment - > https://koinx.notion.site/KoinX-Frontend-Intern-Assignment-8d58a764615d445087b666bf0f6daf4a
